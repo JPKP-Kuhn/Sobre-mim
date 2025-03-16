@@ -1,0 +1,35 @@
+/*:root {}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.biografia {
+    /* Adicione seu estilo aqui */
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.foto-container {
+    display: flex;
+    justify-content: space-around; /* Changed from space-between to space-around */
+}
+
+.foto-pc, .foto-ps2 {
+    padding: 5% 10%; /* Reduced padding */
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Reduced gap */
+}
+
+.foto-ifsc {
+    width: 30%;
+    height: auto;
+}
