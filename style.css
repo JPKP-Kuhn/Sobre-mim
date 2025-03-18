@@ -5,31 +5,108 @@
     padding: 0;
 }
 
-.biografia {
-    /* Adicione seu estilo aqui */
-    background-color: #f0f0f0;
-    color: #333;
+:root {
+    --primary-color: #333;
+    --secondary-color: #f0f0f0;
+    --accent-color: #007bff;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
     padding: 20px;
-    border-radius: 5px;
+}
+
+.cabecalho {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rodape {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: baseline;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.biografia, .passado, .foto-container, .atualmente {
+    margin-bottom: 40px;
 }
 
 .foto-container {
     display: flex;
-    justify-content: space-around; /* Changed from space-between to space-around */
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.foto-pc, .foto-ps2 {
-    padding: 5% 10%; /* Reduced padding */
+.foto-pc, .foto-ps2, .foto-ifsc {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5% 10%;
     width: 45%;
     height: auto;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px; /* Reduced gap */
 }
 
-.foto-ifsc {
-    width: 30%;
-    height: auto;
+
+@media (max-width: 768px) {
+    .foto-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-pc, .foto-ps2, .foto-ifsc {
+        width: 80%;
+    }
 }
