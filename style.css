@@ -16,6 +16,7 @@ body {
     background-color: var(--secondary-color);
     line-height: 1.6;
     padding: 20px;
+    font-size: 20px;
 }
 
 .cabecalho {
@@ -95,6 +96,11 @@ button:hover {
     width: 45%;
     height: auto;
     align-items: center;
+}
+
+.foto-ifsc {
+    width: 30%;
+    height: fit-content;
 }
 
 
