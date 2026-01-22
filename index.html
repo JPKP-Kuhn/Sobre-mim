@@ -2,130 +2,160 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="cabecalho">
         <h1>Meu portfólio</h1>
     </header>
-    <section class="biografia">
-        <h2>Quem é João Pedro?</h2>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-kuhn/">Meu linkedin</a>
-        <p>Tenho 19 anos e busco ser um desenvolvedor de software. Ainda preciso aprender muito mais, pois estou apenas começando a minha jornada.
-        Meus interesses são em desenvolvimento web(desenvolvedor back-end), inteligência artificial, linux, cibersegurança e algoritimos.</p>
-        <p>Atualmente estou matriculado no curso de ciências da computação da <a href="https://ufsc.br/">UFSC FLorianópolis</a></p>
+    <!--https://pudim.com.br/-->
+    <main class="container">
+        <section class="biografia">
+            <h2>Quem é João Pedro?</h2>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-kuhn/">Meu linkedin</a>
+            <p>Tenho <span id="idade"></span> anos e busco ser um desenvolvedor de software. Ainda preciso aprender muito mais, pois estou apenas começando a minha jornada.
+            Meus interesses são em desenvolvimento web(desenvolvedor back-end), inteligência artificial, linux, cibersegurança e algoritimos.</p>
+            <p>Atualmente estou matriculado no curso de ciências da computação da <a href="https://ufsc.br/">UFSC FLorianópolis</a></p>
         </section>
-    <div class="passado">
-        <h2>Meu passado</h2>
-        <p>Tive meu primeiro contato com computadores aos 7 anos, quando meus pais compraram um, a princípio, para usarem para trabalho, mas rapidamente já tomei conta da máquina. 
+    
+    <section class="passado">
+            <h2>Meu passado</h2>
+            <p>Tive meu primeiro contato com computadores aos 7 anos, quando meus pais compraram um, a princípio, para usarem para trabalho, mas rapidamente já tomei conta da máquina. 
             Ao longo do fundamental, eu usei o computador para jogar ou fazer trabalhos escolares. Meu primeiro sistema operacional foi o Windows 7, usava para jogar minecraft e jogos de sites como friv e click jogos, além
             de ferramentas para a impressora de casa e o Microsoft Word ou o Powerpoint para apresentações na escola. Também pesquisava na internet dicas para meus jogos do playstation 2.
-        </p>
-        <section class="foto-container">
-            <img src="img/foto-pc.JPG" alt="uma foto minha quando criança no computador" class="foto-pc">
-            <img src="img/foto-ps2.JPG" alt="Uma foto minha quando criança no playstation 2" class="foto-ps2">
-        </section>
-        <p>Mais no final, por volta do 8º ano tive meu primeiro contato com programação. Foram algumas aulas bem básicas no projeto da escola para os alunos com programação em blocos, no scratch. 
+            </p>
+            <div class="foto-container">
+                <img src="img/foto-pc.JPG" alt="uma foto minha quando criança no computador" class="foto-pc">
+                <img src="img/foto-ps2.JPG" alt="Uma foto minha quando criança no playstation 2" class="foto-ps2">
+            </div>
+            <p>Mais no final, por volta do 8º ano tive meu primeiro contato com programação. Foram algumas aulas bem básicas no projeto da escola para os alunos com programação em blocos, no scratch. 
             Além disso, um amigo meu tinha um Arduino Uno e me mostrava alguns dos seus projetos, <a href="https://www.linkedin.com/in/pedro-dias-8b399419a/">seu linkedin</a>.</p>
-        <p>
+            <p>
             Meu setup da época continuava sendo o mesmo computador, mas já usava o Windows 10 e jogava mais jogos online com amigos
-        </p>
-        <p>
+            </p>
+            <p>
             Na pandemia, agora no ensino médio, entrei em um colégio noturno, lá fiz outro amigo, também muito interessado em programação, <a href="https://www.linkedin.com/in/ezequiel-de-souza-rodrigues-25b538227/">seu linkedin</a>.
             Depois consegui passar no processo seletivo do <a href="https://www.ifsc.edu.br/web/campus-sao-jose">IFSC São José</a>, no curso técnico integrado em telecomunicações.
             Escolhi esse curso, mais pelo meu pai que fez o curso de refrigeração de lá e disse que eu não ia gostar.
-        </p>
-    </div>
-    <div>
-        <h2>No IFSC São José</h2>
-        <section class="foto-container">
-            <img src="img/foto-ifsc.jpg" alt="Uma foto minha, agora maior, no ifsc" class="foto-ifsc">
+            </p>
         </section>
-        <p>
+    
+    <section class="ifsc">
+            <h2>No IFSC São José</h2>
+            <div class="foto-container">
+                <img src="img/foto-ifsc.jpg" alt="Uma foto minha, agora maior, no ifsc" class="foto-ifsc">
+            </div>
+            <p>
             No IFSC tentei aproveitar todas as oportunidades que me apareceram, como uma parte do curso de telecomunicações tem a ver com computadores, na segunda fase tive eletrônica digital.
             Aprendi sobre portas lógicas, o sistema de numeração binário e sobre arduíno. Foi nessa época que eu comecei a me interessar mais por programação, pois eu queria fazer meus próprios projetos.
-        </p>
-        <br>
-        <p>
+            </p>
+            <p>
             Assim, foram três cursos iniciais que comecei, primeiramente pesquisei um curso básico de javascript do Curso em Vídeo, não tinha muitos motivos para escolher esse, só porque era de graça e achei interessante a linguagem. <a href="https://github.com/JPKP-Kuhn/JavaScript-basico">JavaScript-basico</a>
             Depois, junto com alguns amigos de sala e um professor, fizemos um grupo para praticar mais, eu era o menos experiente, mas assistíamos alguns vídeos de projetos e tentávamos aplicá-las, nessa época comecei a ver mais sobre git e github. Um desses projetos foi esse: <a href="https://github.com/JPKP-Kuhn/Self-driving-car">Self Driving car</a>
             Por fim segui em um projeto do colégio para aprender python, com um outro professor. Aprendi do básico até ver sobre classes e Programação Orientada a Objetos (POO), junto com um outro curso de python do Curso em vídeo. <a href="https://github.com/JPKP-Kuhn/Curso-Python">Página do curso de python</a>
             Eu também comecei a ver um pouco sobre linux, porque eu teria uma matéria de redes de computadores e sabia que precisaria ter algum conhecimento, então já queria me preparar. Assim, por recomendação, escolho o Pop OS, pois achei o site oficial e a proposta dele interessantes.
-        </p>
-        <br>
-        <p>
+            </p>
+            <p>
             Alguns outros projetos que podem ser interessantes que fiz ao longo do curso: <a href="https://github.com/JPKP-Kuhn/Gtk-Calculator">Calculadora em GTK</a>, <a href="https://github.com/JPKP-Kuhn/Curso-Alura-One">Curso para desenvolver sites simples</a>, <a href="https://github.com/JPKP-Kuhn/Arduino-Project">Projeto final de um mini curso de robótica</a> e <a href="https://github.com/KaykCaputo/ProjetoSaper">Projeto fullstack</a>. Esse último em particular da Saper, devo agradecer principalmente ao <a href="https://www.linkedin.com/in/joaovitorschmitt/">João Vitor Schmitt</a> e ao <a href="https://www.linkedin.com/in/kayk-caputo/">Kayk Caputo</a>, pois eles já tinham mais conhecimento para que o grupo inteiro conseguisse entregar o projeto final, foram eles que resolveram a maior parte dos problemas que tivemos.
-        </p>
-        <br>
-        <p>
+            </p>
+            <p>
             Em 2024, me dediquei quase completamente para me preparar para o vestibular. No ano anterior, já havia prestado para a UFSC e consegui passar para sistemas da informção. Fiquei contente com esse resultado, mas por recomendação de professores do curso, decidi tentar de novo para ciências da computação, minha primeira opção.
             Então, como o IFSC possui 4 anos por causa do curso técnico (diferentemente do ensino médio no Brasil, de 3 anos), precisava estudar para o vestibular e também fazer os projetos finais do curso.
-        </p>
-        Link dos dois projetos de conclusão de curso: <a href="https://github.com/JPKP-Kuhn/ChatBot_Telecomunicacao">ChatBot com CrewAI</a> e <a href="https://github.com/guitar-hero-luthier">Guitar-hero</a>
-    </div>
-    <br>
-    <br>
-    <div>
-        <h2>Primeiro Ano como estudante na UFSC</h2>
-        <p>
+            </p>
+            <p>Link dos dois projetos de conclusão de curso: <a href="https://github.com/JPKP-Kuhn/ChatBot_Telecomunicacao">ChatBot com CrewAI</a> e <a href="https://github.com/guitar-hero-luthier">Guitar-hero</a></p>
+        </section>
+    
+    <section class="ufsc">
+            <h2>Primeiro Ano como estudante na UFSC</h2>
+            <p>
             Fiquei muito contente por ter conseguido passar para o curso de <a href="https://cco.ufsc.br/sobre-o-curso/descricao/">Ciências da Computação</a> na UFSC.
             Resultado disponível <a href="https://dados.coperve.ufsc.br/vestibular2025/resultado/resultado_208.pdf">aqui</a>.
-        </p>
-        <h3 style="text-align: center;">
-            <strong>CIÊNCIA DA COMPUTAÇÃO - BEL - INTEGRAL - FLORIANÓPOLIS (UFSC)</strong>
-        </h3>
-        <h5 style="text-align: center;">
-            <strong>Segundo Semestre</strong>
-        </h5>
-        <table>
-            <tr>
-                <th>Inscrição</th>
-                <th>Nome do Candidato</th>
-                <th>Categoria de Classificação</th>
-                <th>Classificação</th>
-            </tr>
-            <tr>
-                <td>3027538</td>
-                <td>JOAO PEDRO KUHN</td>
-                <td>310</td>
-                <td>9</td>
-            </tr>
-        </table>
+            </p>
+            <h3 style="text-align: center;">
+                <strong>CIÊNCIA DA COMPUTAÇÃO - BEL - INTEGRAL - FLORIANÓPOLIS (UFSC)</strong>
+            </h3>
+            <h5 style="text-align: center;">
+                <strong>Segundo Semestre</strong>
+            </h5>
+            <table>
+                <tr>
+                    <th>Inscrição</th>
+                    <th>Nome do Candidato</th>
+                    <th>Categoria de Classificação</th>
+                    <th>Classificação</th>
+                </tr>
+                <tr>
+                    <td>3027538</td>
+                    <td>JOAO PEDRO KUHN</td>
+                    <td>310</td>
+                    <td>9</td>
+                </tr>
+            </table>
 
-        <h4>Primeiro Semestre</h4>
-        <p>Como é possível ver pelo resultado, fui aprovado para iniciar as aulas no segundo semestre do ano, porém não fiquei um semestre inteiro parado, na verdade, fiz muitas coisas para continuar aprendendo.</p>
-        <p>Primeiramente, mergulhei mais no mundo do linux e passei a usar <a href="https://archlinux.org/">Arch Linux</a> como meu sistema operacional principal para meu notebook, comprado especificamente para a faculdade.
-        O Arch Linux é um sistema operacional que achei incrível, eu já estava acostumado antes com sistemas baseados no Ubuntu e Debian, mas o Arch é uma experiência a parte logo na instalação dele, pois te força a ter que realmente
-        aprender mais sobre o funcionamento do sistema. Pode-se dizer que um lema que ouvi uma vez: "No linux você é capaz de configurar <strong>TUDO</strong>, mas você é obrigado a configurar <strong>TUDO</strong>"  É verdade.</p>
-        <p>Fui atrás do <a href="https://hypr.land/">Hyprland</a> como Window Manager e inicialmente utilizei um já pronto da prórpia wiki para ter uma noção do que é possível fazer, utilizei <a href="https://github.com/JaKooLit/Hyprland-Dots">esse</a> inicialmente. Então pode-se dizer que eu tinha a possibilidade de mexer em absolutamente tudo no computador.</p>
-        <p>Graças também ao <strong>Rice</strong> que eu já peguei pronto, comecei também a customizar o meu prórpio sistema, incialmente poucas coisas, mudando keybinds do sistema, <a href="https://github.com/Alexays/Waybar">waybar</a>, <a href="https://github.com/davatorium/rofi">rofi</a>, zsh e <a href="https://ohmyz.sh/">Oh My Zsh</a>.</p>
-    </div>
-    <div>
-        <p>Mais perto do mês de março, com o semestre já comçando, eu queria já começar a estudar também as matérias, como cálculo e continuar praticando programação.</p>
-        <p>Para cálculo, me matriculei no <a href="http://pam.mtm.ufsc.br/">PAM</a>, um programa de matemática avançada da UFSC, em que basicamente, ao invés de se estudar cálculo e álgebra linear de um jeito tradicional, apenas fazendo contas, você na verdade aprende todas as provas matemáticas por trás, o que, sendo bem sincero, para o curso de ciências da computação, na minha opnião apenas aprendemos nada mais do que como fornecer instruções para o computador realizar as contas, é extremamente necessário.</p>
-        <p>Além disso, para me dar algum apoio para relembrar outros conteúdos de cálculo e pré-cálculo, me matriculei nas aulas online do <a href="https://piape.ufsc.br/">PIAPE</a>, pois meus colegas do PAM, alunos de outros cursos, já estavam tendo suas aulas, alguns calouros assim como eu.</p>
-        <p>Também conheci o grupo de estudo de maratona de programação, organizadas pelos professores <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=A1B3B93776E6AC13494FC51380A4E2BC.buscatextual_0">Maicon</a> e <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do">Daniel</a>.
-        Esse projeto é realmente importante, pois ele foca em treinar equipes e alunos para duas competições, a <a href="https://olimpiada.ic.unicamp.br/">OBI</a>, para os alunos no primeiro ano de graduação, e <a href="https://maratona.sbc.org.br/index.html">Maratona de Programação SBC</a>.
-        Ambas as competições apresentam problemas de lógica de algoritmos para os alunos resolverem, na OBI individualmente e na maratona em uma equipe de 3. É necessário não apenas utilizar o conhecimento e aplicação básicos de algoritmos e estrutura de dados para resolver os desafios, pelo menos os mais fáceis, mas sim
-        construir um raciocínio e uma alteração do algortmo padrão que é aprendido em aula para assim resolver o problema.
-        </p>
-        <p>Com tais estudos nesse primerio semestre, tive contato com livros de Cálculo do Michael Spivak e livros de programação competitiva do Steven Halim e do CSES, além disso comecei a aprender C++ para as competições.</p>
-        <p>Meu progresso com programação competitiva pode ser visto <a href="https://github.com/JPKP-Kuhn/Desafios-Maratona-Prog">aqui</a> em que tenho o código para as soluções dos problemas.</p>
-        <p>Além disso, paralelo as aulas na UFSC, eu continuei estudando assuntos gerais de computação com o <a href="https://harvardonline.harvard.edu/course/cs50-introduction-computer-science">CS50</a> e com o <a href="https://missing.csail.mit.edu/">Missing Semester</a>
-        Minhas resoluções no CS50 podem ser vistas nesse <a href="https://github.com/JPKP-Kuhn/CS50-2025">repositório</a>.</p>
-    </div>
-
-    <div>
-        <h2>Atualmente</h2>
-        <p>
+            <section class="primeiro-semestre">
+                <h3>Primeiro Semestre</h3>
+                <p>Como é possível ver pelo resultado, fui aprovado para iniciar as aulas no segundo semestre do ano, porém não fiquei um semestre inteiro parado, na verdade, fiz muitas coisas para continuar aprendendo.</p>
+                <p>Primeiramente, mergulhei mais no mundo do linux e passei a usar <a href="https://archlinux.org/">Arch Linux</a> como meu sistema operacional principal para meu notebook, comprado especificamente para a faculdade.
+                O Arch Linux é um sistema operacional que achei incrível, eu já estava acostumado antes com sistemas baseados no Ubuntu e Debian, mas o Arch é uma experiência a parte logo na instalação dele, pois te força a ter que realmente
+                aprender mais sobre o funcionamento do sistema. Pode-se dizer que um lema que ouvi uma vez: "No linux você é capaz de configurar <strong>TUDO</strong>, mas você é obrigado a configurar <strong>TUDO</strong>"  É verdade.</p>
+                <p>Fui atrás do <a href="https://hypr.land/">Hyprland</a> como Window Manager e inicialmente utilizei um já pronto da prórpia wiki para ter uma noção do que é possível fazer, utilizei <a href="https://github.com/JaKooLit/Hyprland-Dots">esse</a> inicialmente. Então pode-se dizer que eu tinha a possibilidade de mexer em absolutamente tudo no computador.</p>
+                <p>Graças também ao <strong>Rice</strong> que eu já peguei pronto, comecei também a customizar o meu prórpio sistema, incialmente poucas coisas, mudando keybinds do sistema, <a href="https://github.com/Alexays/Waybar">waybar</a>, <a href="https://github.com/davatorium/rofi">rofi</a>, zsh e <a href="https://ohmyz.sh/">Oh My Zsh</a>.</p>
+                <figure class="foto-container-rice">
+                    <img src="img/rice-millennium-falcon.png" alt="Screenshot do meu arch linux com hyprland e tema do star wars" class="foto-rice">
+                    <img src="img/rice-hyprland.png" alt="Screenshot do meu arch linux com hyprland com dois tilling windows, terminal com neofetch e firefox" class="foto-rice">
+                    <figcaption>Eu tinha acabado de começar a explorar todos os arquivos de configuração do hyprland, eu tirei o wallpaper da millennium falcon no 4chan, por isso está na imagem</figcaption>
+                </figure>
+                <p>Mais perto do mês de março, com o semestre já comçando, eu queria já começar a estudar também as matérias, como cálculo e continuar praticando programação.</p>
+                <p>Para cálculo, me matriculei no <a href="http://pam.mtm.ufsc.br/">PAM</a>, um programa de matemática avançada da UFSC, em que basicamente, ao invés de se estudar cálculo e álgebra linear de um jeito tradicional, apenas fazendo contas, você na verdade aprende todas as provas matemáticas por trás, o que, sendo bem sincero, para o curso de ciências da computação, na minha opnião apenas aprendemos nada mais do que como fornecer instruções para o computador realizar as contas, é extremamente necessário.</p>
+                <p>Além disso, para me dar algum apoio para relembrar outros conteúdos de cálculo e pré-cálculo, me matriculei nas aulas online do <a href="https://piape.ufsc.br/">PIAPE</a>, pois meus colegas do PAM, alunos de outros cursos, já estavam tendo suas aulas, alguns calouros assim como eu.</p>
+                <p>Também conheci o grupo de estudo de maratona de programação, organizadas pelos professores <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=A1B3B93776E6AC13494FC51380A4E2BC.buscatextual_0">Maicon</a> e <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do">Daniel</a>.
+                Esse projeto é realmente importante, pois ele foca em treinar equipes e alunos para duas competições, a <a href="https://olimpiada.ic.unicamp.br/">OBI</a>, para os alunos no primeiro ano de graduação, e <a href="https://maratona.sbc.org.br/index.html">Maratona de Programação SBC</a>.
+                Ambas as competições apresentam problemas de lógica de algoritmos para os alunos resolverem, na OBI individualmente e na maratona em uma equipe de 3. É necessário não apenas utilizar o conhecimento e aplicação básicos de algoritmos e estrutura de dados para resolver os desafios, pelo menos os mais fáceis, mas sim
+                construir um raciocínio e uma alteração do algortmo padrão que é aprendido em aula para assim resolver o problema.
+                </p>
+                <p>Com tais estudos nesse primerio semestre, tive contato com livros de Cálculo do Michael Spivak e livros de programação competitiva do Steven Halim e do CSES, além disso comecei a aprender C++ para as competições.</p>
+                <p>Meu progresso com programação competitiva pode ser visto <a href="https://github.com/JPKP-Kuhn/Desafios-Maratona-Prog">aqui</a> em que tenho o código para as soluções dos problemas.</p>
+                <!--Se você já fez o curso CS50 e na ativadade você fez o xxd em um arquivo card.raw da semana 4: cs50.ly/surprise-->
+                <p>Além disso, paralelo as aulas na UFSC, eu continuei estudando assuntos gerais de computação com o <a href="https://harvardonline.harvard.edu/course/cs50-introduction-computer-science">CS50</a> e com o <a href="https://missing.csail.mit.edu/">Missing Semester</a>
+                Minhas resoluções no CS50 podem ser vistas nesse <a href="https://github.com/JPKP-Kuhn/CS50-2025">repositório</a>.</p>
+            </section>
+        
+            <section class="segundo-semestre">
+                <h3>Segundo Semestre</h3>
+                <p>Minhas aulas começaram de verdade (Calouro semestre 2025.2), estudei as seguintes matérias:</p>
+                <li>Circuitos e Técnicas Digitais</li>
+                <p>Estudo de circuitos e portas lógicas, circuitos combinacionais e sequenciais. Aulas teóricas e práticas, com uso de FPGA e VHDL.
+                    Projeto final das aulas práticas está nesse <a href="https://github.com/JPKP-Kuhn/Jogo-IQ-da-Memorizacao-rapida">repositŕorio</a>, foi utilizado o quartus durante as aulas, mas para o projeto, utilizei o <a href="https://fabian.paginas.ufsc.br/pt/tools/fpgaemu/">simulador</a>
+                </p>
+                <li>Introdução à Computação</li>
+                <p>Recepção a univerrsidade e ao curso, estudo de tópicos gerais de computação que serão aprofundados mais pra frente, como arquiteturas de computadores
+                    sistemas operacionais e linguagens de programação.
+                </p>
+                <li>Programação Orientada a Objetos I</li>
+                <p>Primeiros passo a linguagem python, variáveis, estruturas condicionais, loops, funções, listas, conjuntos e dicionários. Mais pro final que começou orientação 
+                    a objetos, classes, atributos e métodos. Para mim, foi mais fácil, por causa do curso de python que fiz no IFSC. <a href="">Projeto</a> que fiz nessa matéria, que ainda estou desenvolvendo,
+                    a versão que entreguei foi nos primeiros commits em 13 de dezembro.
+                </p>
+                <li>Fundamentos de Matemática Discreta para Computação</li>
+                <p>Estudo de Conjuntos, Sequências, recursão, aritmética modular, algoritmo de Euclides, relações com posets.</p>
+                <li>Cálculo 1</li>
+                <p>Cálculo clássico, limites, derivadas e introdução a integrais.</p>
+            </section>
+        </section>
+        
+        <section class="atualmente">
+            <h2>Atualmente</h2>
+            <p>
             Agora que consegui passar em ciências da computação na UFSC, porém com início no segundo semestre, e estou formado no IFSC, sinto que preciso de um foco total nessa carreira. Sei que ela não é fácil, além disso, quando se fala em programação, parece que há um infinidade de carreiras possíveis para seguir, por isso, nem sei ao certo ainda qual eu devo me especializar.
-        </p>
-        <p>
+            </p>
+            <p>
             No momento, estou apenas fazendo alguns cursos e explorando aos poucos a faculdade, tentando ver todas as coisas que ela pode me oferecer.
-        </p>
-    </div>
+            </p>
+        </section>
+    </main>
 
     <footer class="rodape">
         Feito por João Pedro Kuhn, <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-kuhn/">Linkedin</a> e <a href="https://github.com/JPKP-Kuhn">Github</a>
