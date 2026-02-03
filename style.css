@@ -121,6 +121,18 @@ p {
     height: fit-content;
 }
 
+.foto-equipe-maratona-sbc {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 table {
     width: 90%;
     border-collapse: collapse;
@@ -170,14 +182,117 @@ h5 {
     font-size: 1.1em;
 }
 
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
 
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    h4 {
+        font-size: 1.1em;
+    }
+    
+    .container {
+        padding: 10px;
+    }
     .foto-container {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .foto-pc, .foto-ps2, .foto-ifsc {
-        width: 80%;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .foto-container-rice {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .foto-rice {
+        width: 100%;
+    }
+    
+    .foto-equipe-maratona-sbc {
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+    
+    figure {
+        margin: 0;
+    }
+    
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    .container {
+        padding: 5px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    video {
+        margin: 15px 0;
+    }
+    
+    .cabecalho {
+        padding: 15px;
     }
 }
